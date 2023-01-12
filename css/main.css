@@ -1,0 +1,188 @@
+/* Glogal Area  */
+:root {
+    --main-color: #33d1cc;
+    --dark-color: #19283f;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: 'Harmattan', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.main-btn:hover {
+    color: white;
+}
+
+.main-color {
+    color: var(--main-color);
+
+}
+
+
+/* Start main section header  */
+
+.main-section-header::after {
+    content: "";
+    width: 150px;
+    position: absolute;
+    height: 2px;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-section-header h3 {
+    color: var(--dark-color);
+}
+
+.main-section-header p {
+    font-size: 0.8rem;
+}
+
+/* End main section header  */
+/* Glogal Area  */
+
+
+
+/* Start Navbar  */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.navbar-nav .nav-link.search {
+    color: var(--main-color);
+    border-left: 1px solid var(--main-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border: 1px solid white;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"], .navbar .navbar-toggler:hover {
+    border-color: var(--main-color);
+}
+
+.navbar .navbar-toggler:focus, .navbar .navbar-toggler:focus-visible {
+    box-shadow: none;
+}
+
+/* End Navbar  */
+
+
+/* Start landing page  */
+.landing-page {
+    min-height: calc(100vh - 70px);
+    background-color: var(--dark-color);
+}
+
+.landing-page p {
+    letter-spacing: 1px;
+}
+
+/* End landing page  */
+
+/* Start features section */
+.features .big-icon {
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.features .big-icon, .features .small-icon {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .small-icon {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.features .icon {
+    height: 175px;
+}
+
+.features h4 {
+    color: var(--yellow-color);
+}
+
+/* End features section */
+
+
+
+/* Start portfolio section  */
+.portfolio {
+    background-color: var(--section-color);
+}
+
+.portfolio .p-option ul li {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.portfolio .p-option ul li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.portfolio .p-option ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.p-gallary .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.p-gallary .box:before {
+    content: attr(data-work);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    opacity: .7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 290%;
+    transition: all .3s;
+}
+
+.p-gallary .box:hover:before {
+    left: 50%;
+
+}
+
+.portfolio .main-btn:hover {
+    color: var(--dark-color);
+}
+
+/* End portfolio section  */
+
+/* Start about us section  */
+.about-us button:hover {
+    color: var(--dark-color);
+}
+
+/* End about us section  */
