@@ -181,8 +181,108 @@ body {
 /* End portfolio section  */
 
 /* Start about us section  */
-.about-us button:hover {
+.about-us button:hover, .blog button:hover {
     color: var(--dark-color);
 }
 
+.about-us img {
+    bottom: -5px;
+}
+
 /* End about us section  */
+
+/* Start Team Section  */
+.team {
+    background-color: var(--section-color);
+}
+
+.team h3 {
+    color: var(--yellow-color);
+}
+
+.team h4 {
+    background-color: var(--main-color);
+}
+
+/* End Team Section  */
+
+
+
+/* Start project Section  */
+.project {
+    background-color: var(--dark-color);
+}
+
+/* End project Section  */
+
+/* Start Contact Us Section  */
+.contact {
+    background-color: var(--yellow-color);
+}
+
+.contact h3 {
+    color: var(--dark-color);
+}
+
+.contact input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+.contact input[type="text"] {
+
+    border-bottom: 1px solid white;
+}
+
+.contact input[type="text"]:focus {
+    outline: none;
+}
+
+.contact input[type="text"]::placeholder {
+    color: white;
+}
+
+/* End Contact Us Section  */
+
+
+/* Start footer Section  */
+footer {
+    background-color: var(--dark-color);
+}
+
+footer .copy-right p>span {
+    color: var(--main-color);
+}
+
+footer .copy-right div span {
+    color: var(--yellow-color);
+}
+
+footer .contact-us svg {
+    width: 20px;
+    height: 20px;
+    transition: all .3s;
+}
+
+footer .contact-us .facebook {
+    background-color: #1877f2;
+}
+
+footer .contact-us .linkedin {
+    background-color: #0077b5;
+
+}
+
+footer .contact-us .twitter {
+    background-color: #1da1f2;
+
+}
+
+footer .contact-us .youtube {
+    background-color: #ff0000;
+
+}
+footer .contact-us svg:hover {
+    background-color: transparent;
+}
+/* End footer Section  */
