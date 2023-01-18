@@ -41,20 +41,27 @@
                 <a
                   class="nav-link active me-lg-3 mt-3 mt-lg-0"
                   aria-current="page"
-                  href="#">Home</a>
+                  href="#" data-section=".landing-page">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#">Service</a>
+                <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#" data-section=".features">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#">Portfolio</a>
+                <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#" data-section=".portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#">About</a>
+                <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#" data-section=".about-us">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#">Contact</a>
-              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#" data-section=".team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#" data-section=".blog">Our Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3 mt-3 mt-lg-0" href="#" data-section=".contact">Contact</a>
+            </li>
               <li class="nav-item">
                 <a class="nav-link search me-lg-3 ps-3 mt-3 mt-lg-0" href="#"><i
                     class="fa-solid fa-magnifying-glass"></i></a>
@@ -72,12 +79,12 @@
       <!-- Start landing Page  -->
       <div
         class="landing-page text-light d-flex justify-content-center
-        align-items-center flex-column">
+        align-items-center flex-column section " >
         <h2 class="fs-1 fw-normal">Taste the Creativity</h2>
         <p class="fs-6 text-white-50 mb-5">
           We make awesome graphic and web design
         </p>
-        <button class="btn main-btn rounded-pill">Get Started</button>
+        <button class="btn main-btn rounded-pill get-started" data-section=".features">Get Started</button>
       </div>
       <!-- End landing Page  -->
     </header>
@@ -87,7 +94,7 @@
     <!-- Start main  -->
     <main>
       <!-- Start features section  -->
-      <div class="features text-center my-5">
+      <div class="features text-center my-5 section" >
         <div class="container">
           <div class="main-section-header my-5 position-relative bottom-0">
             <img src="pic/title.png" alt="" srcset="" />
@@ -140,7 +147,7 @@
       </div>
       <!-- End features section  -->
       <!-- Start portfolio Section  -->
-      <div class="portfolio text-center py-5">
+      <div class="portfolio text-center py-5 section" >
         <div class="container">
           <div class="main-section-header my-5 position-relative bottom-0">
             <img src="pic/title.png" alt="" srcset="" />
@@ -151,87 +158,79 @@
           </div>
 
           <div class="p-option">
-            <ul
-              class="position-relative py-5 d-flex justify-content-center
+            <ul class="position-relative py-5 d-flex justify-content-center
               align-items-center row">
-              <li
-                class="list-group mx-md-2 col-4 col-md-1 active rounded-pill
-                py-1 px-3 px-md-1">
+              <li class="list-group mx-md-2 col-4 col-md-1 active rounded-pill
+                py-1 px-3 px-md-1" data-port-btn="All">
                 All
               </li>
-              <li
-                class="list-group mx-md-2 col-4 col-md-1 rounded-pill py-1
-                px-1">
+              <li class="list-group mx-md-2 col-4 col-md-1 rounded-pill py-1
+                px-1" data-port-btn="Design">
                 Design
               </li>
-              <li
-                class="list-group mx-md-2 col-4 col-md-1 rounded-pill py-1
-                px-1">
+              <li class="list-group mx-md-2 col-4 col-md-1 rounded-pill py-1
+                px-1" data-port-btn="Code">
                 Code
               </li>
-              <li
-                class="list-group mx=md-2 col-5 col-md-2 rounded-pill py-1
-                px-1">
+              <li class="list-group mx=md-2 col-5 col-md-2 rounded-pill py-1
+                px-1" data-port-btn="Photography">
                 Photography
               </li>
-              <li
-                class="list-group mx-md-2 col-4 col-md-1 rounded-pill py-1
-                px-1">
+              <li class="list-group mx-md-2 col-4 col-md-1 rounded-pill py-1
+                px-1" data-port-btn="Apps">
                 Apps
               </li>
             </ul>
           </div>
           <div class="p-gallary row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div
-                class="box rounded-2 bg-white mx-1 my-3"
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Design">
+              <div class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
                 <img class="img-fluid" src="pic/work-01.jpg" alt="" />
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div
-                class="box rounded-2 bg-white mx-1 my-3"
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Apps">
+              <div class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
                 <img class="img-fluid" src="pic/work-02.jpg" alt="" />
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Code">
               <div
                 class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
                 <img class="img-fluid" src="pic/work-03.jpg" alt="" />
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Photography">
               <div
                 class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
                 <img class="img-fluid" src="pic/work-04.jpg" alt="" />
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Apps">
               <div
                 class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
                 <img class="img-fluid" src="pic/work-05.jpg" alt="" />
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Photography">
               <div
                 class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
                 <img class="img-fluid" src="pic/work-06.jpg" alt="" />
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Design">
               <div
                 class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
                 <img class="img-fluid" src="pic/work-07.jpg" alt="" />
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallary-port" data-port-image="Design">
               <div
                 class="box rounded-2 bg-white mx-1 my-3"
                 data-work="Portfolio">
@@ -247,7 +246,7 @@
       <!-- End portfolio Section  -->
 
       <!-- Start about us section  -->
-      <div class="about-us mt-5">
+      <div class="about-us mt-5 section" >
         <div class="container">
           <div
             class="main-section-header my-5 position-relative bottom-0
@@ -296,7 +295,7 @@
 
 
       <!-- Start Team Section  -->
-      <div class="team text-center py-5">
+      <div class="team text-center py-5 section" >
         <div class="container py-5">
           <h3 class="fw-bold fs-1">Meet the Team</h3>
           <p class="text-black-50 px-5 mx-5">
@@ -352,7 +351,7 @@
       <!-- End  Team Section  -->
 
       <!-- Start lab Section -->
-      <div class="lab text-center container text-align-center my-5">
+      <div class="lab text-center container text-align-center my-5 section" >
         <div class="row">
 
           <div class="col-6 col-md-4 my-4 col-lg-2">
@@ -379,7 +378,7 @@
 
 
       <!-- Start project section  -->
-      <div class="project text-white my-5 text-center py-5">
+      <div class="project text-white my-5 text-center py-5 section" >
         <div class="container mt-5 mb-3">
           <h3>Start Your Project Now</h3>
           <p class="text-white-50 mt-3">Leave your description and we start the
@@ -392,7 +391,7 @@
 
 
       <!-- Start blog section  -->
-      <div class="blog pb-5">
+      <div class="blog pb-5 section" >
         <div class="container">
           <div
             class="main-section-header my-5 position-relative bottom-0
@@ -443,7 +442,7 @@
       <!-- End blog section  -->
 
       <!-- Start contact section  -->
-      <div class="contact">
+      <div class="contact section" >
         <div class="container py-5">
           <form class="row align-items-center ">
             <div class="col-md-6 col-lg-4 my-4 my-md-0">
@@ -534,6 +533,13 @@
       </div>
     </footer>
     <!-- End footer Section  -->
+
+
+    <!-- Start Scroll to top Button  -->
+    <div class="scroll-top position-fixed text-white fs-3 d-flex justify-content-center align-items-center rounded-circle ">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- End Scroll to top Button  -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>

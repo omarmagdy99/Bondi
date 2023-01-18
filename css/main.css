@@ -10,7 +10,7 @@
 body {
     font-family: 'Harmattan', sans-serif;
     font-family: 'Roboto', sans-serif;
-
+    position: relative;
 }
 
 .main-btn {
@@ -113,6 +113,7 @@ body {
 .features .small-icon {
     color: var(--main-color);
     font-size: 3rem;
+
 }
 
 .features .icon {
@@ -134,7 +135,7 @@ body {
 
 .portfolio .p-option ul li {
     cursor: pointer;
-    transition: all .3s;
+    transition: all .4s;
 }
 
 .portfolio .p-option ul li.active {
@@ -146,9 +147,26 @@ body {
     color: var(--red-color);
 }
 
+
+
 .p-gallary .box {
     position: relative;
     overflow: hidden;
+}
+.portfolio .gallary-port.hide {
+    position: absolute;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+    background-color: rgba(92, 91, 87, 0.9);
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+
+.portfolio .gallary-port {
+    visibility: visible;
+    opacity: 1;
 }
 
 .p-gallary .box:before {
@@ -282,7 +300,23 @@ footer .contact-us .youtube {
     background-color: #ff0000;
 
 }
+
 footer .contact-us svg:hover {
     background-color: transparent;
 }
+
 /* End footer Section  */
+
+
+/* Start Scroll To Top Button  */
+.scroll-top {
+    bottom: -60px;
+    right: 10px;
+    background-color: var(--red-color);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+/* End Scroll To Top Button  */
